@@ -1,0 +1,47 @@
+"WHAT: Center for Public Integrity analysis of EPA's Toxics Release Inventory and Greenhouse Gas Reporting Program, connecting emission reports at a facility level.",
+"This includes TRI revisions from companies through Sept. 1, 2016.",
+See methodology here:,https://www.publicintegrity.org/2016/09/29/20253/americas-super-polluters-methodology
+,
+Worksheets:,
+"""All facilities"":","All facilities that reported to the TRI and/or the GHGRP, even if that report was for zero air emissions. This includes some facilities in U.S. territories. NOTE: Some TRI emission reports are in fractions of pounds. The 2014 data doesn't round emissions of less than 1 pound to the greatest whole number, in order to make clear that these facilities are reporting small emissions, not zero emissions, but previous years' data are rounded. Also, the TRI-rank and GHG-rank columns account for ties, with 1 representing the highest emissions; blank means the facility did not report to that inventory or reported zero for the category."
+"""State totals"":",State rankings by facility-reported greenhouse-gas emissions and Toxics Release Inventory air emissions in 2014.
+,
+Notes:,
+"These emissions figures are only from facilities -- not, for instance, vehicles -- and only for those facilities required to report (generally larger facilities). Here's what the EPA says about the two programs:",
+"""The GHGRP generally requires facilities that emit above 25,000 metric tons CO2e [carbon dioxide equivalents] of GHGs to report their emissions. Therefore this data set does not reflect total U.S. emissions or total emissions from individual states. Roughly 50% of total U.S. emissions are reported by large emitting facilities subject to the GHGRP.""",
+"""In general, chemicals covered by the TRI Program are those that cause: Cancer or other chronic human health effects; Significant adverse acute human health effects; Significant adverse environmental effects. There are currently over 650 chemicals covered by the TRI Program. Facilities that manufacture, process or otherwise use these chemicals in amounts above established levels must submit annual TRI reports on each chemical. The TRI chemical list doesn't include all toxic chemicals used in the U.S. ... Facilities that report to TRI are typically larger facilities involved in manufacturing, metal mining, electric power generation, chemical manufacturing and hazardous waste treatment.""",
+,
+More about GHG reporting requirements:,http://www.ccdsupport.com/confluence/pages/viewpage.action?pageId=141983792
+More about TRI reporting requirements:,https://www.epa.gov/toxics-release-inventory-tri-program/learn-about-toxics-release-inventory
+,
+,
+,
+"Column definitions for ""All facilities"" worksheet:",
+UniqueID,"Unique ID, assigned by the Center, to allow for proper combining of GHG and TRI data, including multiple reports to one or both programs from the same complex. This is generally the same as the Facility Registry Service (FRS) ID (see below)."
+Facility name,"The name of the facility. It's not uncommon for the different EPA datasets to report the names slightly differently. We generally used the names in the Toxics Release Inventory, if the program reported to it."
+Rank TRI '14,"Rank for total Toxics Release Inventory emissions in 2014, with ""1"" representing the most emissions. A blank rank reflects a facility that reported zero air emissions or did not report to the TRI in 2014."
+Rank GHG '14,"Rank for total Greenhouse Gas Reporting Program emissions in 2014, with ""1"" representing the most emissions. A blank rank reflects a facility that reported zero emissions or did not report to the GHGRP in 2014."
+Latitude,EPA-reported latitude of the complex
+Longitude,EPA-reported longitude of the complex
+Location address,Address of the facility.
+City,Facility's city
+State,Facility's state
+ZIP,Facility's ZIP code
+County,Facility's county
+FIPS code,County FIPS code
+Primary NAICS,Primary NAICS code for the facility as noted in the TRI and/or GHGRP data.
+Second primary NAICS,"For facilities reporting more than one primary NAICS codes, either because two or more pieces of one complex report separately to one of the programs or because the facility reported different primary NAICS codes to the TRI and GHGRP."
+Third primary NAICS,"For facilities reporting more than one primary NAICS codes, either because two or more pieces of one complex report separately to one of the programs or because the facility reported different primary NAICS codes to the TRI and GHGRP."
+Industry type,Industry type as reported by the GHGRP. (The TRI does not have this information separate from NAICS codes.)
+Parent companies 2014 (GHG),Parent companies in 2014 as reported to the GHGRP. Note that some facilities likely have different owners in one of the prior years; this ownership information is just for 2014.
+Parent companies 2014 (TRI),"Parent companies in 2014 as reported to the TRI. Note that some facilities likely have different owners in one of the prior years; this ownership information is just for 2014. Also, the TRI doesn't account for multiple-company ownership as the GHGRP does."
+TRI air emissions 14 (in pounds),"Air emissions (only air emissions) reported to the Toxics Release Inventory in 2014, if any. Says ""0"" if that's what the company reported. Says ""Not reported"" if there is no report from the facility (facilities aren't all required to report to the TRI)."
+TRI air emissions 13 [and previous years],TRI air emissions reports for the year noted.
+GHG direct emissions 14 (in metric tons),"Greenhouse gas emissions directly emitted by the facility and reported to the Greenhouse Gas Reporting Program in 2014, if any. Says ""0"" if that's what the company reported. Says ""Not reported"" if there is no report from the facility (facilities aren't all required to report to the GHGRP)."
+GHG direct emissions 13 [and previous years],GHG emissions reports for the year noted.
+GHG Facility Id,ID number for the Greenhouse Gas Reporting Program.
+"Second GHG Facility Id [and Third, Fourth, etc.]","If the complex reported in two or more pieces to the GHGRP, you'll see more GHG IDs in these fields."
+TRI Id,ID number for the Toxics Release Inventory.
+"Second TRI Id [and Third, Fourth, etc.]","If the complex reported in two or more pieces to the TRI, you'll see more TRI IDs in these fields."
+FRS Id,ID number for the Facility Registry Service (more details about FRS here: https://www.epa.gov/enviro/facility-registry-service-frs)
+"Second FRS Id [and Third, Fourth, etc.]","If the complex has two or more FRS numbers, you'll see more FRS IDs in these fields."
